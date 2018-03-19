@@ -1,7 +1,5 @@
-## Ansible
 
-
-# Project
+# Decription
 
 This is a brief guide in order to install and deploy: Apache & Postgresql using Ansible
 
