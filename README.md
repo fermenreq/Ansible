@@ -2,7 +2,7 @@
 # Install and deploy your APP using Ansible
 
 
-## 1.Project folder:
+## 1. Project folder:
 
 ```
 ├── postgresql_playbook.yml
@@ -26,7 +26,7 @@
     └── main.yml
 ```
 
-## 2.Mandatory Installations 
+## 2. Mandatory Installations 
 
 ```
 $ sudo apt-get install software-properties-common
@@ -35,7 +35,7 @@ $ sudo apt-get update
 $ sudo apt-get install ansible
 ```
 
-## 3.Understanding Basic Terminology
+## 3. Understanding Basic Terminology
 
 1. **Hosts**
 
@@ -55,7 +55,7 @@ In our case, we are provisioning a db server, in other cases, it would be db ser
 
 Roles, are abstractable, and one can inherit from the other. For instance, the web and mail server needs to install basic packages like build-essential, ntp, and supervisor. A common role can be created, and the web & mail server can execute the common tasks, present in the common role
 
-# How it works
+## 4. How it works
 
 
 Set up Ansible host file. In this case we are working on localhost: 127.0.0.1
@@ -86,7 +86,7 @@ root@osboxes:/Ansible# ansible-playbook ansible.yml
 
 ```
 
-## 4.Output
+## 5. Output
 
 ```
 PLAY [Deploy an App using Ansible] ********************************************************************************************************************
