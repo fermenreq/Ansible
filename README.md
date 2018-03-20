@@ -2,7 +2,7 @@
 # Install and deploy your APP using Ansible
 
 
-# Project folder:
+## 1.Project folder:
 
 ```
 ├── postgresql_playbook.yml
@@ -26,7 +26,7 @@
     └── main.yml
 ```
 
-# Mandatory Installations 
+## 2.Mandatory Installations 
 
 ```
 $ sudo apt-get install software-properties-common
@@ -35,7 +35,7 @@ $ sudo apt-get update
 $ sudo apt-get install ansible
 ```
 
-# Understanding Basic Terminology
+## 3.Understanding Basic Terminology
 
 1. **Hosts**
 
@@ -79,14 +79,14 @@ root@osboxes:/etc/ansible# cat hosts
 127.0.0.1
 
 ```
-Run ansible: 
+**Run ansible:**
 
 ```
 root@osboxes:/Ansible# ansible-playbook ansible.yml
 
 ```
 
-# Output
+## 4.Output
 
 ```
 PLAY [Deploy an App using Ansible] ********************************************************************************************************************
@@ -125,6 +125,6 @@ PLAY RECAP *********************************************************************
 127.0.0.1                  : ok=10   changed=1    unreachable=0    failed=0   
 ```
 
-# Author:
+## Author:
 
 Fernando Méndez Requena - fernando.mendez@atos.net
