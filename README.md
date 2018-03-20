@@ -72,10 +72,9 @@ root@osboxes:/etc/ansible# cat hosts
 ## beta.example.org
 ## 192.168.1.100
 ## 192.168.1.110
-**127.0.0.1**
+127.0.0.1
 
 ```
-
 Run ansible: 
 
 ```
