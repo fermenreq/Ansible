@@ -1,7 +1,5 @@
 
-# Decription
-
-This is a brief guide in order to install and deploy: Apache & Postgresql using Ansible
+# Install and deploy your APP using Ansible
 
 
 # Project folder:
@@ -19,9 +17,15 @@ This is a brief guide in order to install and deploy: Apache & Postgresql using 
 │       │   └── main.yml
 │       └── tasks
 │           └── main.yml
+── createApp
+│       ├── handlers
+│       │   └── main.yml
+│       └── tasks
+│           └── main.yml
 └── vars
     └── main.yml
 ```
+
 # Mandatory Installations 
 
 ```
