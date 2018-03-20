@@ -17,13 +17,18 @@
 │       │   └── main.yml
 │       └── tasks
 │           └── main.yml
-── createApp
+│   └── createApp
 │       ├── handlers
 │       │   └── main.yml
 │       └── tasks
 │           └── main.yml
 └── vars
-    └── main.yml
+|    └── main.yml
+│ 
+└──myproject
+├── manage.py
+├── myapp
+
 ```
 
 ## 2. Mandatory Installations 
