@@ -37,19 +37,19 @@ $ sudo apt-get install ansible
 
 ## 3. Understanding Basic Terminology
 
-1. **Hosts**
+**1. Hosts**
 
 Ansible contains information about the hosts and groups of hosts to be managed in the hosts file. This is also called an inventory file. We just finished with Inventory File.
 
 
-2. **Playbook**
+**2. Playbook**
 
 Ansible playbooks help the management of a remote computer in a scripted way.A group of systems can be configured by passing scripts to those systems, using ansible. These scripts are called playbooks. They are written in YAML format.
 
 Each playbook contains one or more roles that provision one or more hosts by executing tasks.
 
 
-3. **Roles**
+**3. Roles**
 
 In our case, we are provisioning a db server, in other cases, it would be db server, mail server, web server, so on and so forth. To manage all these different type of servers, it will become difficult to put the contents in a single file. For this purpose, we can have multiple directories, for multiple purpose(roles).
 
