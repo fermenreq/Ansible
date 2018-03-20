@@ -54,7 +54,7 @@ Roles, are abstractable, and one can inherit from the other. For instance, the w
 # How it works
 
 
-Set up Ansible host file. In this case Im working on localhost. 
+Set up Ansible host file. In this case Im working on localhost: 127.0.0.1
 
 ```
 root@osboxes:/home/osboxes/Desktop/Proyectos/STAMP/Ansible# cd /etc/ansible/
@@ -85,8 +85,10 @@ root@osboxes:/etc/ansible# cat hosts
 ## beta.example.org
 ## 192.168.1.100
 ## 192.168.1.110
+```
 **127.0.0.1**
 
+```
 # If you have multiple hosts following a pattern you can specify
 # them like this:
 
@@ -105,7 +107,6 @@ root@osboxes:/etc/ansible# cat hosts
 # leading 0s:
 
 ## db-[99:101]-node.example.com
-
 
 ```
 
