@@ -1,6 +1,7 @@
 ---
-db_user: dbusername
-db_name: dbname
-db_password: dbpassword
+db_user: -------------
+db_name: -------------
+db_password: ---------
+
 
 update_apt_cache: true

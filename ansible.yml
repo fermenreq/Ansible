@@ -1,5 +1,7 @@
 - name: Deploy an App using Ansible
-  hosts: localhost
+  hosts: webservers
+  connection: local
+
   user: root
 
   vars_files:

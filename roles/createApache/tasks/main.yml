@@ -7,6 +7,3 @@
   apache2_module: name=rewrite state=present
   notify:
     - restart apache2
-
-- name: Apache2 enable modules
-  action: command a2enmod rewrite state=present
