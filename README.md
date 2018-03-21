@@ -63,7 +63,7 @@ Roles, are abstractable, and one can inherit from the other. For instance, the w
 ## 4. How it works
 
 
-Set up Ansible host file. In this case we are working on localhost: 127.0.0.1
+Edit the ansible/hosts file and enter the IP address of the server you are deploying to
 
 ```
 root@osboxes:/home/osboxes/Desktop/Proyectos/STAMP/Ansible# cd /etc/ansible/
