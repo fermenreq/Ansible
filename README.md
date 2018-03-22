@@ -1,6 +1,8 @@
 
 # Install and deploy your APP using Ansible
 
+![alt text](https://raw.githubusercontent.com/fermenreq/Ansible/master/stamp_ansible.png)
+
 
 ## 1. Project folder:
 
