@@ -1,0 +1,42 @@
+---
+
+- name: Install system packages
+  apt: pkg={{ item }} update_cache=no
+  with_items: "{{ system_packages }}"
+
+- name: Create directory for app
+  file: path={{ install_root }}/{{ project_name }} state=directory
+
+- name: Clone/pull project repo
+  git: repo={{project_repo}} dest={{ install_root }}/{{ project_name }}
+
+- name: Install python requirements.txt
+  pip:
+    requirements: "/srv/my_project/my_app/requirements.txt"
+    virtualenv: "/srv/my_project/my_app/venv"
+
+- name: django migrate
+  django_manage: 
+    command: migrate 
+    app_path: "{{ install_root }}/{{ project_name }}/my_app"
+    python_path: "{{ pythonpath }}"
+    virtualenv: "/srv/my_project/my_app/venv"
+
+- name: django collectstatic
+  django_manage: 
+    command: collectstatic 
+    app_path: "{{ install_root }}/{{ project_name }}/my_app"
+    pythonpath: "{{ pythonpath }}"
+    virtualenv: "/srv/my_project/my_app/venv"
+
+- name: Make manage.py exectutable
+  file: 
+    path: "{{ install_root }}/{{ project_name }}/my_app/manage.py"
+    mode: 0777
+
+- name: django run app
+  django_manage: 
+    command: runserver 
+    app_path: "{{ install_root }}/{{ project_name }}/my_app"
+    python_path: "{{ pythonpath }}"
+    virtualenv: "/srv/my_project/my_app/venv"
