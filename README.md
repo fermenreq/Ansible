@@ -14,11 +14,6 @@
 │       │   └── main.yml
 │       └── tasks
 │           └── main.yml
-│   └── createApache
-│       ├── handlers
-│       │   └── main.yml
-│       └── tasks
-│           └── main.yml
 │   └── createApp
 │       ├── handlers
 │       │   └── main.yml
@@ -40,6 +35,22 @@ $ sudo apt-get install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
 $ sudo apt-get update
 $ sudo apt-get install ansible
+```
+
+## 2.1 System Requirements
+```
+root@osboxes:/home/osboxes/Proyectos/OFION/yourbpm# uname -a
+Linux osboxes 4.13.0-39-generic #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+root@osboxes:/home/osboxes/Proyectos/OFION/yourbpm# ansible --version
+ansible 2.5.1
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.12 (default, Dec  4 2017, 14:50:18) [GCC 5.4.0 20160609]
+  
+mysql.db
 ```
 
 ## 3. Understanding Basic Terminology
