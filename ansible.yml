@@ -9,5 +9,4 @@
 
   roles:
   - createdb
-  - createApache
   - createApp
